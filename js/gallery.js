@@ -11,7 +11,7 @@ async function logMovies() {
       <div class="w-10/12 m-2 justify-center items-center mx-auto  ">
       <div class="bg-white shadow-xl rounded-lg py-3">
           <div class="photo-wrapper p-2">
-              <img class="w-24 h-24 rounded-full mx-auto ring-2 shadow-2xl ring-orange-500" src="${students.img}" alt="${students.name}">
+              <img class="w-28 h-28 rounded-full mx-auto ring-2 shadow-2xl ring-orange-500" src="${students.img}" alt="${students.name}">
           </div>
           <div class="p-2 ">
               <h3 class="text-center text-xl text-gray-900 font-medium leading-8 "> ${students.name}</h3>
