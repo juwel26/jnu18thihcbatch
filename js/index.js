@@ -1,7 +1,7 @@
 
 
 // Set the date we're counting down to
-var countDownDate = new Date("feb 17, 2024 5:00:00").getTime();
+var countDownDate = new Date("feb 17, 2024 4:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -21,6 +21,7 @@ var x = setInterval(function() {
   // Output the result in an element with id="demo"
   document.getElementById("demo").innerHTML =`time left for dept tour = `;
 
+    document.querySelector(".days").innerHTML = ` ${days} D`
     document.querySelector(".Hours").innerHTML = ` ${hours} H`
     document.querySelector(".minutes").innerHTML = `${minutes} M`
     document.querySelector(".secends").innerHTML = `${seconds} S`
@@ -28,7 +29,16 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("tour").innerHTML = "Today is your Department Tour Day 🥳";
-    document.querySelector(".cler").style.display = none
+    document.getElementById("tour2").innerHTML    = "Today is our Department Tour Day 🥳";
+    document.getElementById("tour").style.display = "none"
+    document.getElementById("demo").innerHTML   = ""
+    document.querySelector(".days").style.display = "none"
+    document.querySelector(".Hours").style.display = "none" 
+    document.querySelector(".minutes").style.display = "none"
+    document.querySelector(".secends").style.display = "none"
+    document.querySelector(".cler").style.display = " none"
   }
 }, 1000);
+
+let demo = 
+console.log(demo)
