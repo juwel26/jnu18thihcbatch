@@ -19,12 +19,16 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML =`time left for dept tour = `;
+
+    document.querySelector(".Hours").innerHTML = ` ${hours} H`
+    document.querySelector(".minutes").innerHTML = `${minutes} M`
+    document.querySelector(".secends").innerHTML = `${seconds} S`
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("tour").innerHTML = "Today is your Department Tour Day 🥳";
+    document.querySelector(".cler").style.display = none
   }
 }, 1000);
