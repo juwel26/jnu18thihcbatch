@@ -59,8 +59,8 @@ function marque() {
     // If the count down is over, write some text
     if (distance < 0) {
       clearInterval(x);
-      document.querySelector(".paragrap").innerHTML =
-        "    🔥 🔥 📰 1st mid exam of 2nd semester will be start 03/03/2024. 🔥 ";
+      document.querySelector(".container").innerHTML =
+        " ";
     }
   }, 1000);
 
