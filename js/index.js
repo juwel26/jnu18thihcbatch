@@ -68,3 +68,46 @@ function marque() {
 }
 
 marque();
+
+// timerupdate
+
+let timerShow = document.getElementById("timer")
+function showtime(){
+    
+  setInterval(()=>{
+    counter()
+  },1000)
+    const date = new Date()
+    const Time = date.getHours()
+   
+   
+    function counter(){
+       let date = new Date().getDate()
+       let month = new Date().getMonth()
+       let year = new Date().getFullYear()
+     let hours = new Date().getHours()
+     let minutes = new Date().getMinutes()
+     let seconds = new Date().getSeconds()
+
+
+      console.log(timerShow)
+    if (20 <= Time) {
+        timerShow.innerHTML = ` 🌙Good Night  ${hours}: ${minutes}: ${seconds}  `
+       
+    } else if(0 <= Time){
+        timerShow.innerHTML = `🌤️Good Morning ${hours}: ${minutes}: ${seconds}`
+
+    }
+     else if(12 <= Time){
+        timerShow.innerHTML = `Good Afternoon ${hours}: ${minutes}: ${seconds}`
+
+    }
+     else if(17 <= Time){
+        timerShow.innerHTML = `🌇Good Evening ${hours}: ${minutes}: ${seconds}`
+
+    }
+    }
+   
+}
+
+showtime()
