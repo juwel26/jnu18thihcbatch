@@ -1,4 +1,5 @@
-// for any timer update ***********************
+
+// for any event update  ***********************
 
 // Set the date we're counting down to
 var countDownDate = new Date("mar 3, 2024 8:00:00").getTime();
@@ -91,21 +92,28 @@ function showtime(){
 
 
       console.log(timerShow)
-    if (20 <= Time) {
-        timerShow.innerHTML = ` 🌙Good Night  ${hours}: ${minutes}: ${seconds}  `
+
+
+    if ( Time >= 0 && Time < 12) {
+       timerShow.innerHTML = `🌤️Good Morning ${hours}: ${minutes}: ${seconds}`
        
-    } else if(0 <= Time){
-        timerShow.innerHTML = `🌤️Good Morning ${hours}: ${minutes}: ${seconds}`
+    }
+     else if(Time > 12 && Time < 17 ){
+        timerShow.innerHTML = `😴 Good Afternoon ${hours}: ${minutes}: ${seconds}`
 
     }
-     else if(12 <= Time){
-        timerShow.innerHTML = `Good Afternoon ${hours}: ${minutes}: ${seconds}`
 
-    }
-     else if(17 <= Time){
+    else if(Time > 17 && Time < 19){
         timerShow.innerHTML = `🌇Good Evening ${hours}: ${minutes}: ${seconds}`
 
     }
+    
+    else {
+         timerShow.innerHTML = ` 🌙Good Night  ${hours}: ${minutes}: ${seconds}  `
+
+    }
+
+     
     }
    
 }
