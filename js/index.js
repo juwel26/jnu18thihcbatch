@@ -103,7 +103,7 @@ function showtime(){
 
     }
 
-    else if(Time > 17 && Time < 19){
+    else if(Time > 17 && Time < 20){
         timerShow.innerHTML = `🌇Good Evening ${hours}: ${minutes}: ${seconds}`
 
     }
