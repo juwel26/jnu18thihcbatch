@@ -1,8 +1,7 @@
-
 // for any event update  ***********************
 
 // Set the date we're counting down to
-var countDownDate = new Date("mar 18, 2024 8:00:00").getTime();
+var countDownDate = new Date("mar 8, 2024 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -32,7 +31,6 @@ var x = setInterval(function () {
     document.querySelector(".timerHeadline").innerHTML =
       " our  mid exam start  from today.. 🥳";
     document.querySelector(".timer").style.display = "none";
-    
   }
 }, 1000);
 
@@ -40,7 +38,7 @@ var x = setInterval(function () {
 
 function marque() {
   // Set the date we're counting down to
-  var countDownDate = new Date("mar 18, 2024 00:00:00").getTime();
+  var countDownDate = new Date(" mar 5, 2024 00:00:00").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function () {
@@ -61,8 +59,7 @@ function marque() {
     // If the count down is over, write some text
     if (distance < 0) {
       clearInterval(x);
-      document.querySelector(".container").innerHTML =
-        " ";
+      document.querySelector(".container").innerHTML = "";
     }
   }, 1000);
 
@@ -73,50 +70,34 @@ marque();
 
 // timerupdate
 
-let timerShow = document.getElementById("timer")
-function showtime(){
-    
-  setInterval(()=>{
-    counter()
-  },1000)
-    const date = new Date()
-    const Time = date.getHours()
-   
-   
-    function counter(){
-       let date = new Date().getDate()
-       let month = new Date().getMonth()
-       let year = new Date().getFullYear()
-     let hours = new Date().getHours()
-     let minutes = new Date().getMinutes()
-     let seconds = new Date().getSeconds()
+let timerShow = document.getElementById("timer");
+function showtime() {
+  setInterval(() => {
+    counter();
+  }, 1000);
+  const date = new Date();
+  const Time = date.getHours();
 
+  function counter() {
+    let date = new Date().getDate();
+    let month = new Date().getMonth();
+    let year = new Date().getFullYear();
+    let hours = new Date().getHours();
+    let minutes = new Date().getMinutes();
+    let seconds = new Date().getSeconds();
 
-      console.log(timerShow)
+    console.log(timerShow);
 
-
-    if ( Time >= 0 && Time < 12) {
-       timerShow.innerHTML = `🌤️Good Morning ${hours}: ${minutes}: ${seconds}`
-       
+    if (Time >= 0 && Time < 12) {
+      timerShow.innerHTML = `🌤️Good Morning ${hours}: ${minutes}: ${seconds}`;
+    } else if (Time > 12 && Time < 17) {
+      timerShow.innerHTML = `😴 Good Afternoon ${hours}: ${minutes}: ${seconds}`;
+    } else if (Time > 17 && Time < 20) {
+      timerShow.innerHTML = `🌇Good Evening ${hours}: ${minutes}: ${seconds}`;
+    } else {
+      timerShow.innerHTML = ` 🌙Good Night  ${hours}: ${minutes}: ${seconds}  `;
     }
-     else if(Time > 12 && Time < 17 ){
-        timerShow.innerHTML = `😴 Good Afternoon ${hours}: ${minutes}: ${seconds}`
-
-    }
-
-    else if(Time > 17 && Time < 20){
-        timerShow.innerHTML = `🌇Good Evening ${hours}: ${minutes}: ${seconds}`
-
-    }
-    
-    else {
-         timerShow.innerHTML = ` 🌙Good Night  ${hours}: ${minutes}: ${seconds}  `
-
-    }
-
-     
-    }
-   
+  }
 }
 
-showtime()
+showtime();
