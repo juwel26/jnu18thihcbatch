@@ -45,7 +45,6 @@ async function logMovies() {
       </div>
   </div>  `
   
-  
    }).join(" ")}`
 
   }

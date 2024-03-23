@@ -1,157 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/x-icon" href="../img/icon.png">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" type="image/x-icon" href="../img/icon.png" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>About 18th batch</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- navebar -->
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-<div class="w-full text-gray-700 bg-green-200 dark-mode:text-gray-200 dark-mode:bg-gray-800">
-  <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-    <div class="p-4 flex flex-row items-center justify-between">
-      <a href="../index.html" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><img class="h-10 w-auto" src="../img/logo1.png" alt="" srcset=""></a>
-      <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-        </svg>
-      </button>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <div
+      class="w-full text-gray-700 bg-green-200 dark-mode:text-gray-200 dark-mode:bg-gray-800"
+    >
+      <div
+        x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
+      >
+        <div class="p-4 flex flex-row items-center justify-between">
+          <a
+            href="../index.html"
+            class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
+            ><img class="h-10 w-auto" src="../img/logo1.png" alt="" srcset=""
+          /></a>
+          <button
+            class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+            @click="open = !open"
+          >
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path
+                x-show="!open"
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                x-show="open"
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav
+          :class="{'flex': open, 'hidden': !open}"
+          class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row"
+        >
+          <a
+            class="px-4 py-2 mt-2 text-md font-semibold bg-transparent bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-300 focus:outline-none focus:shadow-outline"
+            href="../index.html"
+            >Home</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-md font-semibold bg-transparent bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-300 focus:outline-none focus:shadow-outline"
+            href="../html/QustionHub.html"
+            >Question Hub</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-400 focus:outline-none focus:shadow-outline"
+            href="../html/PhotoGallery.html"
+            >Photo Gallery</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-400 focus:outline-none focus:shadow-outline"
+            href="../html/ContactCR.html"
+            >Contact CR</a
+          >
+        </nav>
+      </div>
     </div>
-    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-      <a class="px-4 py-2 mt-2 text-md font-semibold bg-transparent bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-300 focus:outline-none focus:shadow-outline" href="../index.html">Home</a>
-      <a class="px-4 py-2 mt-2 text-md font-semibold bg-transparent bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-300 focus:outline-none focus:shadow-outline" href="../html/QustionHub.html">Question Hub</a>
-      <a class="px-4 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-400 focus:outline-none focus:shadow-outline" href="../html/PhotoGallery.html">Photo Gallery</a>
-      <!-- <a class="px-4 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-400 focus:outline-none focus:shadow-outline" href="./html/about.html">About 18th </a> -->
-      <a class="px-4 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-400 focus:outline-none focus:shadow-outline" href="../html/ContactCR.html">Contact CR</a>
-    </nav>
-  </div>
-</div>
 
-<!-- video gallery -->
-
-<!-- component -->
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 underline decoration-pink-500"> Our program </h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base"> we are enjoy our program and some memory</p>
-    </div>
-    <div class="flex flex-wrap -m-4">
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <!-- <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/600x360"> -->
-          <div class=" relative z-10 w-full border-2 border-gray-200 bg-white ">
-            <iframe class="w-full aspect-video ..." width="560" height="315" src="https://www.youtube.com/embed/lIOLrZgZfAg?si=3urNplVno8V1VNko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h2 class="px-4  tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Jagannath University</h2>
-            <h1 class="px-4  title-font text-lg font-medium text-gray-900 mb-3">let's tour our varsity</h1>
-            <!-- <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p> -->
-          </div>
+    <!-- head text  -->
+    <section class="grid place-items-center p-5 pt-10">
+      <div
+        class="flex max-w-xs items-center border-l-8 border-emerald-500 bg-emerald-50 p-4 text-emerald-900 shadow-lg"
+      >
+        <div class="min-w-0">
+          <h2 class="overflow-hidden text-ellipsis text-2xl whitespace-nowrap">
+            Our some events
+          </h2>
         </div>
       </div>
+    </section>
+    <!-- video gallery -->
+    <div
+      class="mt-5 py-2 show grid grid-cols-1 gap-2 m-2 md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 xl:grid xl:grid-cols-3"
+    ></div>
 
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <div class=" relative z-10 w-full border-2 border-gray-200 bg-white ">
-            <iframe class="w-full aspect-video ..." width="560" height="315" src="https://www.youtube.com/embed/Xh8e672nr9w?si=ADE9jTDtLJn5ZYmn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h2 class=" px-4 tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Jagannath University</h2>
-            <h1 class=" px-4 title-font text-lg font-medium text-gray-900 mb-3">fast day in ous uviversity life  IHC 18th</h1>
-          </div>
+    <!-- foooter-->
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex items-center justify-center">
+          <a
+            href="./index.html"
+            class="flex items-center mb-4 sm:mb-0 space-x-3"
+          >
+            <img
+              src="../img/logo1.png"
+              class="h-8 justify-center items-center mx-auto"
+              alt="Varsity logo"
+            />
+          </a>
         </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >©
+          <script type="text/javascript">
+            var year = new Date();
+            document.write(year.getFullYear());
+          </script>
+          <a href="../index.html" class="hover:underline"> IHC 18th Batch</a>.
+          All Rights Reserved.
+          <a href="https://juwelranaweb.netlify.app/" class="hover:underline"
+            >Contact with Developer</a
+          ></span
+        >
       </div>
-
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <div class=" relative z-10 w-full border-2 border-gray-200 bg-white ">
-            <iframe class="w-full aspect-video ..." width="560" height="315" src="https://www.youtube.com/embed/ZORm1KcTe5M?si=J4GglfyYH7c6mGbj"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h2 class=" px-4 tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Jagannath University</h2>
-            <h1 class=" px-4 title-font text-lg font-medium text-gray-900 mb-3">sorotutshob 2023</h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <div class=" relative z-10 w-full border-2 border-gray-200 bg-white ">
-            <iframe class="w-full aspect-video ..." width="560" height="315" src="https://www.youtube.com/embed/W5jrg0UGr3A?si=4W6EE9ukJtFc4iV1"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h2 class=" px-4 tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Jagannath University</h2>
-            <h1 class=" px-4 title-font text-lg font-medium text-gray-900 mb-3">sorotutshob 2023</h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <div class="relative z-10 w-full border-2 border-gray-200 bg-white ">
-            <iframe class="w-full aspect-video ..." width="560" height="315" src="https://www.youtube.com/embed/hz0dHujyiiA?si=TMA5EkS2uaUpJwTm"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h2 class=" px-4 tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Jagannath University</h2>
-            <h1 class=" px-4 title-font text-lg font-medium text-gray-900 mb-3">sorotutshob 2023</h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <div class=" relative z-10 w-full border-2 border-gray-200 bg-white ">
-            <iframe class="w-full aspect-video ..." width="560" height="315" src="https://www.youtube.com/embed/oGzOgrLx4b8?si=tdnSdgK7tPqpKTxa"   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h2 class="px-4 tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Jagannath University</h2>
-            <h1 class="px-4 title-font text-lg font-medium text-gray-900 mb-3">sorotutshob 2023</h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <div class=" relative z-10 w-full border-2 border-gray-200 bg-white ">
-            <iframe class="w-full aspect-video ..." width="560" height="315" src="https://www.youtube.com/embed/qxZ0DCayOPs?si=XpRx9Uv5uZABgkdf"   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h2 class="px-4 tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Jagannath University</h2>
-            <h1 class="px-4 title-font text-lg font-medium text-gray-900 mb-3">flshmoob 2023</h1>
-          </div>
-        </div>
-      </div>
-      
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <div class=" relative z-10 w-full border-2 border-gray-200 bg-white ">
-            <iframe class="w-full aspect-video ..." width="560" height="315" src="https://www.youtube.com/embed/JxjjAis4y90?si=prqjW7WnJdB7yjbL"   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h2 class="px-4 tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Jagannath University</h2>
-            <h1 class="px-4 title-font text-lg font-medium text-gray-900 mb-3">Boys dance ( Rakibul, Atik, Zihad, Tawfiq)</h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <div class=" relative z-10 w-full border-2 border-gray-200 bg-white ">
-            <iframe class="w-full aspect-video ..." width="560" height="315" src="https://drive.google.com/file/d/1IR3A7A0kN0e-vDVmo3OiRcc3CKsOQHf8/preview"   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h2 class="px-4 tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Jagannath University</h2>
-            <h1 class="px-4 title-font text-lg font-medium text-gray-900 mb-3">Department Tour IHC 18th 2024🔥</h1>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-</section>
-
-<!-- foooter-->
-<footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
-  <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-      <div class="sm:flex items-center justify-center">
-          <a href="./index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 ">
-              <img src="../img/logo1.png" class="h-8 justify-center items-center mx-auto " alt="Varsity logo" />
-          </a>           
-      </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script><a href="../index.html" class="hover:underline"> IHC 18th Batch</a>. All Rights Reserved. <a href="https://juwelranaweb.netlify.app/" class="hover:underline">Contact with Developer</a></span>
-  </div>
-</footer>
-</body>
+    </footer>
+    <script src="../js/about.js"></script>
+  </body>
 </html>
