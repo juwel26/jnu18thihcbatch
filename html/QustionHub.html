@@ -1,93 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/x-icon" href="../img/icon.png">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" type="image/x-icon" href="../img/icon.png" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Question Hub</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- navebar -->
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-<div class="w-full text-gray-700 bg-green-200 dark-mode:text-gray-200 dark-mode:bg-gray-800">
-  <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-    <div class="p-4 flex flex-row items-center justify-between">
-      <a href="../index.html" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><img class="h-10 w-auto" src="../img/logo1.png" alt="" srcset=""></a>
-      <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-        </svg>
-      </button>
-    </div>
-    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-      <a class="px-4 py-2 mt-2 text-md font-semibold bg-transparent bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-300 focus:outline-none focus:shadow-outline" href="../index.html">Home</a>
-      <a class="px-4 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-400 focus:outline-none focus:shadow-outline" href="../html/Gallery.html">Gallery</a>
-      <a class="px-4 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-400 focus:outline-none focus:shadow-outline" href="../html/Students.html">Students </a>
-      <a class="px-4 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-400 focus:outline-none focus:shadow-outline" href="../html/ContactCR.html">Contact CR</a>
-    </nav>
-  </div>
-</div>
-
-<!-- qustion hub ---->
-
-<!-- 2021 -->
- <div class="container">
-  <div class=" m-5 md:mt-10 md:ml-10  "> 
-     <h1 class="21Qustion  text-lg md:text-xl font-bold text-indigo-500 mb-10  "> 1st year 1st samester 2015-2022 Question </h1>      
-       
-        <a href="../pdf/1101.pdf" class=" flex  items-center mx-auto  font-semibold inline w-auto bg-gray-200 rounded-lg mb-2 p-2" download="course-1101">
-           <img src="../icon/pdfIcon.png" alt="" srcset="" class="  mr-2 h-10 w-10" >
-            Course 1101.pdf
-        </a>          
-        <a href="../pdf/1102.pdf" class=" flex  items-center mx-auto font-semibold inline w-auto bg-gray-200 rounded-lg mb-2 p-2" download="course-1102">
-           <img src="../icon/pdfIcon.png" alt="" srcset="" class="  mr-2 h-10 w-10" >
-            Course 1102.pdf
-        </a>          
-        <a href="../pdf/1103.pdf" class=" flex  items-center mx-auto font-semibold inline w-auto bg-gray-200 rounded-lg mb-2 p-2" download="course-1103">
-           <img src="../icon/pdfIcon.png" alt="" srcset="" class="  mr-2 h-10 w-10" >
-            Course 1103.pdf
-        </a>          
-        <a href="../pdf/1104 qustion pdf.pdf" class=" flex  items-center mx-auto font-semibold inline w-auto bg-gray-200 rounded-lg mb-2 p-2" download="course-1104">
-           <img src="../icon/pdfIcon.png" alt="" srcset="" class="  mr-2 h-10 w-10" >
-            Course 1104.pdf
-        </a>          
-  </div> 
- </div>
-
-  <!-- 1st to 4th year qustion  -->
- <div class="container">
-  <div class=" m-5 md:mt-10 md:ml-10  "> 
-     <h1 class="21Qustion text-lg md:text-xl font-bold text-indigo-500 mb-10  "> 1st year to 4th year full syllabus </h1>      
-         <a href="../pdf/IHC full Syllabus JnU.pdf" class=" flex  items-center mx-auto font-semibold inline w-auto bg-gray-200 rounded-lg mb-2 p-3">
-           <img src="../icon/pdfIcon.png" alt="" srcset="" class="  mr-2 h-10 w-10" >
-            full course of IHC department.pdf
-        </a> 
-  </div> 
- </div>
-
-<!-- 2nd semester questions  -->
- <div class="container">
-  <div class=" m-5 md:mt-10 md:ml-10  "> 
-     <h1 class="21Qustion text-lg md:text-xl font-bold text-indigo-500 mb-10  "> 1st year 2nd samester question comming soon....</h1>      
-      
-  </div> 
- </div>
-
- <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
-  <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-      <div class="sm:flex items-center justify-center">
-          <a href="./index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 ">
-              <img src="../img/logo1.png" class="h-8 justify-center items-center mx-auto " alt="Varsity logo" />
-          </a>           
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <div
+      class="w-full text-gray-700 bg-green-200 dark-mode:text-gray-200 dark-mode:bg-gray-800"
+    >
+      <div
+        x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
+      >
+        <div class="p-4 flex flex-row items-center justify-between">
+          <a
+            href="../index.html"
+            class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
+            ><img class="h-10 w-auto" src="../img/logo1.png" alt="" srcset=""
+          /></a>
+          <button
+            class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+            @click="open = !open"
+          >
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path
+                x-show="!open"
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                x-show="open"
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav
+          :class="{'flex': open, 'hidden': !open}"
+          class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row"
+        >
+          <a
+            class="px-4 py-2 mt-2 text-md font-semibold bg-transparent bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-300 focus:outline-none focus:shadow-outline"
+            href="../index.html"
+            >Home</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-400 focus:outline-none focus:shadow-outline"
+            href="../html/Gallery.html"
+            >Gallery</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-400 focus:outline-none focus:shadow-outline"
+            href="../html/Students.html"
+            >Students
+          </a>
+          <a
+            class="px-4 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-green-100 focus:bg-lime-400 focus:outline-none focus:shadow-outline"
+            href="../html/ContactCR.html"
+            >Contact CR</a
+          >
+        </nav>
       </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script><a href="../index.html" class="hover:underline"> IHC 18th Batch</a>. All Rights Reserved. <a href="https://juwelranaweb.netlify.app/" class="hover:underline">Contact with Developer</a></span>
-  </div>
-</footer>
-</body>
+    </div>
+
+    <!-- qustion hub ---->
+
+    <div
+        class="flex max-w-xs items-center m-5 border-l-8 border-emerald-500 bg-emerald-50 p-4 text-emerald-900 shadow-lg"
+      >
+        <div class="min-w-0">
+          <h2 class="overflow-hidden text-ellipsis text-2xl whitespace-nowrap">
+            Note: For Download file just click on the file 
+          </h2>
+        </div>
+      </div>
+
+    <!-- 2021 -->
+    <div class="container">
+      <div class="m-5 md:mt-10 md:ml-10">
+        <h1
+          class="21Qustion text-lg md:text-xl font-bold text-indigo-500 mb-10"
+        >
+          1st year 1st samester 2015-2022 Question
+        </h1>
+
+        <a
+          href="../pdf/1101.pdf"
+          class="flex items-center mx-auto font-semibold inline w-auto bg-gray-200 rounded-lg mb-2 p-2"
+          download="course-1101"
+        >
+          <img
+            src="../icon/pdfIcon.png"
+            alt=""
+            srcset=""
+            class="mr-2 h-10 w-10"
+          />
+          Course 1101.pdf
+        </a>
+        <a
+          href="../pdf/1102.pdf"
+          class="flex items-center mx-auto font-semibold inline w-auto bg-gray-200 rounded-lg mb-2 p-2"
+          download="course-1102"
+        >
+          <img
+            src="../icon/pdfIcon.png"
+            alt=""
+            srcset=""
+            class="mr-2 h-10 w-10"
+          />
+          Course 1102.pdf
+        </a>
+        <a
+          href="../pdf/1103.pdf"
+          class="flex items-center mx-auto font-semibold inline w-auto bg-gray-200 rounded-lg mb-2 p-2"
+          download="course-1103"
+        >
+          <img
+            src="../icon/pdfIcon.png"
+            alt=""
+            srcset=""
+            class="mr-2 h-10 w-10"
+          />
+          Course 1103.pdf
+        </a>
+        <a
+          href="../pdf/1104 qustion pdf.pdf"
+          class="flex items-center mx-auto font-semibold inline w-auto bg-gray-200 rounded-lg mb-2 p-2"
+          download="course-1104"
+        >
+          <img
+            src="../icon/pdfIcon.png"
+            alt=""
+            srcset=""
+            class="mr-2 h-10 w-10"
+          />
+          Course 1104.pdf
+        </a>
+      </div>
+    </div>
+
+    <!-- 1st to 4th year qustion  -->
+    <div class="container">
+      <div class="m-5 md:mt-10 md:ml-10">
+        <h1
+          class="21Qustion text-lg md:text-xl font-bold text-indigo-500 mb-10"
+        >
+          1st year to 4th year full syllabus
+        </h1>
+        <a
+          href="../pdf/IHC full Syllabus JnU.pdf"
+          class="flex items-center mx-auto font-semibold inline w-auto bg-gray-200 rounded-lg mb-2 p-3"
+        >
+          <img
+            src="../icon/pdfIcon.png"
+            alt=""
+            srcset=""
+            class="mr-2 h-10 w-10"
+          />
+          full course of IHC department.pdf
+        </a>
+      </div>
+    </div>
+
+    <!-- 2nd semester questions  -->
+    <div class="container">
+      <div class="m-5 md:mt-10 md:ml-10">
+        <h1
+          class="21Qustion text-lg md:text-xl font-bold text-indigo-500 mb-10"
+        >
+          1st year 2nd samester question
+        </h1>
+        <!-- 01 -->
+        <a
+          href="../pdf/2018 2nd s.pdf"
+          class="flex items-center mx-auto font-semibold inline w-auto bg-gray-200 rounded-lg mb-2 p-3"
+        >
+          <img
+            src="../icon/pdfIcon.png"
+            alt=""
+            srcset=""
+            class="mr-2 h-10 w-10"
+            download="2018 2nd samester"
+          />
+          2018 2nd samester pdf
+          
+        </a>
+
+        <!-- 02 -->
+        <a href="../pdf/2019 2nd s.pdf" class=" flex  items-center mx-auto font-semibold inline w-auto bg-gray-200 rounded-lg mb-2 p-3">
+          <img src="../icon/pdfIcon.png" alt="" srcset="" class="  mr-2 h-10 w-10" download="2019 2nd samester">
+          2019 2nd samester pdf
+       </a>
+
+       <!-- 03 -->
+        <a href="../pdf/2020 2nd semester.pdf" class=" flex  items-center mx-auto font-semibold inline w-auto bg-gray-200 rounded-lg mb-2 p-3">
+          <img src="../icon/pdfIcon.png" alt="" srcset="" class="  mr-2 h-10 w-10" download="2020 2nd samester">
+          2020 2nd samester pdf
+       </a>
+
+       <!-- 04 -->
+        <a href="../pdf/2021 2nd s.pdf" class=" flex  items-center mx-auto font-semibold inline w-auto bg-gray-200 rounded-lg mb-2 p-3">
+          <img src="../icon/pdfIcon.png" alt="" srcset="" class="  mr-2 h-10 w-10" download="2021 2nd samester">
+          2021 2nd samester pdf
+       </a>
+
+       <!-- 05 -->
+        <a href="../pdf/2022 2nd s.pdf" class=" flex  items-center mx-auto font-semibold inline w-auto bg-gray-200 rounded-lg mb-2 p-3">
+          <img src="../icon/pdfIcon.png" alt="" srcset="" class="  mr-2 h-10 w-10" download="2022 2nd samester">
+          2022 2nd samester pdf
+       </a>
+
+      </div>
+    </div>
+
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex items-center justify-center">
+          <a
+            href="./index.html"
+            class="flex items-center mb-4 sm:mb-0 space-x-3"
+          >
+            <img
+              src="../img/logo1.png"
+              class="h-8 justify-center items-center mx-auto"
+              alt="Varsity logo"
+            />
+          </a>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >©
+          <script type="text/javascript">
+            var year = new Date();
+            document.write(year.getFullYear());
+          </script>
+          <a href="../index.html" class="hover:underline"> IHC 18th Batch</a>.
+          All Rights Reserved.
+          <a href="https://juwelranaweb.netlify.app/" class="hover:underline"
+            >Contact with Developer</a
+          ></span
+        >
+      </div>
+    </footer>
+  </body>
 </html>
