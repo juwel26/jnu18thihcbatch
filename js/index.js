@@ -164,25 +164,3 @@ function wishes() {
 
 wishes();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* <div class="flex flex-wrap -m-4">
-<div class="xl:w-1/3 md:w-1/2 p-2">
-  <div class="bg-white p-1 rounded-lg">
-    <img class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72  rounded w-full object-cover object-center mb-6" src="${photos.img}" alt="Image Size 720x400">
-    <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
-    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">${photos.title}</h2>
-    <p class="leading-relaxed text-base">${photos.discription}</p>
-  </div>
-</div> */}
