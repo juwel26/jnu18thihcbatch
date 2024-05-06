@@ -1,7 +1,7 @@
 // for any event update  ***********************
 
 // Set the date we're counting down to
-var countDownDate = new Date("mar 8, 2024 00:00:00").getTime();
+var countDownDate = new Date("may 11, 2024 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -29,7 +29,7 @@ var x = setInterval(function () {
   if (distance < 0) {
     clearInterval(x);
     document.querySelector(".timerHeadline").innerHTML =
-      " our  mid exam start  from today.. 🥳";
+      " our 2nd mid exam start  from today.. 🥳";
     document.querySelector(".timer").style.display = "none";
   }
 }, 1000);
@@ -38,7 +38,7 @@ var x = setInterval(function () {
 
 function marque() {
   // Set the date we're counting down to
-  var countDownDate = new Date(" april 5, 2024 00:00:00").getTime();
+  var countDownDate = new Date(" may 8, 2024 00:00:00").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function () {
