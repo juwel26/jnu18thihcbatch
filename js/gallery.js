@@ -35,7 +35,7 @@ async function logMovies() {
     return `
 <div class="xl:w-1/3 md:w-1/2 p-1 shadow-md my-4  ">
 <div class="bg-white p-1 rounded-lg">
-  <img class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72  rounded w-full object-cover object-center mb-6" src=" src="https://lh3.google.com/u/0/d/${photos.img}  download="${photos.title}" " alt="Image Size 720x400">
+  <img class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72  rounded w-full object-cover object-center mb-6" src=" src="https://lh3.google.com/u/0/d/${photos.img} " alt="Image Size 720x400">
   <h2 class="text-lg text-gray-900 font-medium title-font mb-4">${photos.title}</h2>
   <p class="leading-relaxed text-base">${photos.discription}</p>
 </div>
